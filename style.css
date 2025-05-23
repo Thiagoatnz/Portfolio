@@ -83,6 +83,11 @@ nav a:hover {
     max-width: 400px;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.foto img:hover {
+    transform: scale(1.05);
 }
 
 .sobre-texto {
@@ -92,7 +97,7 @@ nav a:hover {
 
 .sobre-texto h2,
 .sobre-texto h3 {
-    color: #000; /* Deixa os títulos pretos */
+    color: #000;
     margin-bottom: 10px;
 }
 
@@ -205,4 +210,38 @@ footer a:hover {
 
 .fechar:hover {
     color: #f00;
+}
+
+/* ==== SKILLS COM ÍCONES ==== */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    text-align: center;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.skill img:hover {
+    transform: scale(1.2);
+}
+
+.skill span {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: var(--text);
 }

@@ -28,17 +28,60 @@
         <div class="sobre-texto">
             <h2>Sobre Mim</h2>
             <p>Olá, eu sou o Thiago! Desenvolvedor Fullstack, Vibecoder e Data Science. Apaixonado por tecnologia, código e soluções criativas. Atualmente estudando ciencia da computação (CS50, Harvard), desenvolvimento web, mobile, data science e IA. Curioso por natureza e viciado em aprender coisas novas. Bora codar?</p>
+            <br>
 
             <h2 id="skills">Minhas Skills</h2>
-            <ul>
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>React, Next.js, Node.js</li>
-                <li>Python, FastAPI</li>
-                <li>SQL, PostgreSQL, MongoDB</li>
-                <li>R (Data Science e Estatística)</li>
-                <li>Docker, Git e GitHub</li>
-                <li>UI/UX, Figma, Design Responsivo</li>
-            </ul>
+
+            <div class="skills-icons">
+                <div class="skill">
+                    <img src="imagens/html5.png" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/css3.png" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/javascript.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/nextjs.png" alt="Next.js">
+                    <p>Next.js</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/nodejs.png" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/r.png" alt="R">
+                    <p>R</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/sql.png" alt="SQL">
+                    <p>SQL</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/docker.png" alt="Docker">
+                    <p>Docker</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/github.png" alt=GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill">
+                    <img src="imagens/figma.png" alt="Figma">
+                    <p>Figma</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -74,33 +117,31 @@
     </section>
 
     <!-- Modal para imagem -->
-<div id="modal" class="modal">
-    <span class="fechar">&times;</span>
-    <img class="modal-conteudo" id="imgModal">
-</div>
+    <div id="modal" class="modal">
+        <span class="fechar">&times;</span>
+        <img class="modal-conteudo" id="imgModal">
+    </div>
 
+    <footer id="contato">
+        <p>&copy; 2025 Thiago - Todos os direitos reservados</p>
+        
+        <p>
+            <a href="mailto:thiagoatnz@gmail.com" target="_blank">
+                Email: thiagoatnz@gmail.com
+            </a>
+        </p>
 
-<footer id="contato">
-    <p>&copy; 2025 Thiago - Todos os direitos reservados</p>
-    
-    <p>
-        <a href="mailto:thiagoatnz@gmail.com" target="_blank">
-            Email: thiagoatnz@gmail.com
-        </a>
-    </p>
+        <p>
+            <a href="https://api.whatsapp.com/send?phone=5561991429335" target="_blank">
+                WhatsApp: (61) 99142-9335
+            </a>
+        </p>
 
-    <p>
-        <a href="https://api.whatsapp.com/send?phone=5561991429335" target="_blank">
-            WhatsApp: (61) 99142-9335
-        </a>
-    </p>
-
-</footer>
+    </footer>
 
     <script src="script.js"></script>
 
     <script>
-    // Pega todos os elementos de imagem dos projetos
     const imagens = document.querySelectorAll('.projeto img');
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('imgModal');
@@ -122,6 +163,6 @@
             modal.style.display = "none";
         }
     }
-</script>
+    </script>
 </body>
 </html>
