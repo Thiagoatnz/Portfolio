@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Thiago</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Thiago Dev Fullstack & Vibecoder</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="toggle-mode">🌙 / ☀️</button>
+    </header>
+
+    <section id="sobre" class="sobre-container">
+        <div class="foto">
+            <img src="imagens/foto-perfil.jpg" alt="Foto do Thiago">
+        </div>
+        <div class="sobre-texto">
+            <h2>Sobre Mim</h2>
+            <p>Fala, eu sou o Thiago! Desenvolvedor Fullstack, Vibecoder e Data Science. Apaixonado por tecnologia, código e soluções criativas. Atualmente estudando ciencia da computação (CS50, Harvard), desenvolvimento web, mobile, data science e IA. Curioso por natureza e viciado em aprender coisas novas. Bora codar?</p>
+
+            <h2 id="skills">Minhas Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Next.js, Node.js</li>
+                <li>Python, FastAPI</li>
+                <li>SQL, PostgreSQL, MongoDB</li>
+                <li>R (Data Science e Estatística)</li>
+                <li>Docker, Git e GitHub</li>
+                <li>UI/UX, Figma, Design Responsivo</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h1>Meus Projetos</h1>
+        <div class="container-projetos">
+
+            <div class="projeto">
+                <img src="imagens/Anna Bella.png" alt="Anna Bella">
+                <h3>Anna Bella</h3>
+                <p>Landing Page</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Tecblog.png" alt="TecBlog">
+                <h3>TecBlog</h3>
+                <p>Blog de Tecnologia</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Chale Hotel.png" alt="Chalé Hotel">
+                <h3>Chalé Hotel</h3>
+                <p>Landing Page Comercial</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Noticias Cidade.png" alt="Notícias Cidade">
+                <h3>Notícias Cidade</h3>
+                <p>Portal de Notícias</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal para imagem -->
+<div id="modal" class="modal">
+    <span class="fechar">&times;</span>
+    <img class="modal-conteudo" id="imgModal">
+</div>
+
+
+<footer id="contato">
+    <p>&copy; 2025 Thiago - Todos os direitos reservados</p>
+    
+    <p>
+        <a href="mailto:thiagoatnz@gmail.com" target="_blank">
+            Email: thiagoatnz@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <a href="https://api.whatsapp.com/send?phone=5561991429335" target="_blank">
+            WhatsApp: (61) 99142-9335
+        </a>
+    </p>
+
+</footer>
+
+    <script src="script.js"></script>
+
+    <script>
+    // Pega todos os elementos de imagem dos projetos
+    const imagens = document.querySelectorAll('.projeto img');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('imgModal');
+    const span = document.getElementsByClassName('fechar')[0];
+
+    imagens.forEach((img) => {
+        img.addEventListener('click', function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        });
+    });
+
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
