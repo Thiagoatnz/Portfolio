@@ -397,9 +397,9 @@ body.dark .projeto:hover {
 #btnTop {
     display: none;
     position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
     border: none;
     outline: none;
     background-color: #333;
@@ -409,6 +409,18 @@ body.dark .projeto:hover {
     border-radius: 50%;
     font-size: 18px;
     transition: background-color 0.3s;
+}
+
+#btnTop:hover {
+    background-color: #555;
+}
+
+body.dark #btnTop {
+    background-color: #00bfff;
+}
+
+body.dark #btnTop:hover {
+    background-color: #009acd;
 }
 
 #btnTop:hover {
