@@ -50,3 +50,4 @@ btnTop.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
